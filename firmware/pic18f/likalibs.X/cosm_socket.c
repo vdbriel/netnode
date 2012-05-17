@@ -92,7 +92,7 @@ void cosm_report(char *name, signed short value, char scale) {
 
     // Report the sensor value
     printf("{\n\"method\":\"put\",\n");
-    printf("\"resource\":\"/feeds/%d\",\n",feed_id);
+    printf("\"resource\":\"/feeds/%u\",\n",feed_id);
     printf("\"params\":{},\n");
     printf("\"headers\":{\"X-PachubeApiKey\":\"%s\"},\n", api_key);
     printf("\"body\":{\n \"version\":\"1.0.0\",\n \"datastreams\":[\n {\n  ");
